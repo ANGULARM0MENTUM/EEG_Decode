@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EEG Decode</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>EEG 实时解码</h1>
+    <p class="sub">BrainFlow Synthetic Board · 滑动窗口谱熵 · 有界缓冲</p>
+  </header>
+  <section class="controls">
+    <button id="btn-start">开始会话</button>
+    <button id="btn-stop" disabled>结束会话</button>
+    <button id="btn-summary" disabled>拉取汇总</button>
+    <label class="chk"><input type="checkbox" id="accelerated" /> 加速生产（验收用）</label>
+    <span id="sid"></span>
+  </section>
+  <section class="kpis">
+    <div><span>状态</span><strong id="state">IDLE</strong></div>
+    <div><span>吞吐 (sps)</span><strong id="sps">—</strong></div>
+    <div><span>端到端延迟</span><strong id="e2e">—</strong></div>
+    <div><span>窗口数</span><strong id="wins">0</strong></div>
+    <div><span>丢弃块</span><strong id="drop">0</strong></div>
+    <div><span>队列</span><strong id="q">0</strong></div>
+  </section>
+  <section class="plots">
+    <div>
+      <h2>原始波形（最近数秒，降采样展示）</h2>
+      <canvas id="wave" width="960" height="280"></canvas>
+    </div>
+    <div>
+      <h2>平滑谱熵（每通道 + 全局）</h2>
+      <canvas id="ent" width="960" height="220"></canvas>
+    </div>
+  </section>
+  <section>
+    <h2>熵值结果汇总</h2>
+    <pre id="summary">尚未生成。会话中途或结束后点击「拉取汇总」。</pre>
+  </section>
+  <script src="/static/app.js"></script>
+</body>
+</html>

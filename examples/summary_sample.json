@@ -1,0 +1,30 @@
+{
+  "session": {
+    "session_id": "sample000001",
+    "fs": 256.0,
+    "n_channels": 8,
+    "window_sec": 2.0,
+    "hop_sec": 0.25,
+    "entropy_method": "spectral",
+    "source": "synthetic_fallback",
+    "status": "stopped"
+  },
+  "samples_seen": 7680,
+  "windows": 113,
+  "dropped_chunks": 0,
+  "channel_entropy": {
+    "mean": [0.72, 0.71, 0.73, 0.72, 0.70, 0.71, 0.72, 0.73],
+    "min": [0.61, 0.60, 0.62, 0.61, 0.59, 0.60, 0.61, 0.63],
+    "max": [0.81, 0.80, 0.82, 0.81, 0.79, 0.80, 0.81, 0.83],
+    "range": [0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20]
+  },
+  "global_entropy": {"mean": 0.718, "min": 0.61, "max": 0.82, "range": 0.21, "std": 0.04, "count": 113},
+  "latency_ms": {"mean": 12.4, "max": 41.0, "min": 3.1},
+  "trend": "stable",
+  "intervals": [
+    {"label": "STABLE", "t_start": 2.0, "t_end": 28.5, "windows": 107},
+    {"label": "CHANGING", "t_start": 28.75, "t_end": 30.0, "windows": 6}
+  ],
+  "last_state": "OK",
+  "note": "Placeholder replaced by tests/test_acceptance.py which writes examples/summary_generated.json"
+}

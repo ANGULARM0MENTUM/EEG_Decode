@@ -1,0 +1,9 @@
+services:
+  eeg:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      EEG_LOG_LEVEL: INFO
+    volumes:
+      - ./data:/app/data
