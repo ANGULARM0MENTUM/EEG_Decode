@@ -22,7 +22,7 @@ def _wait_windows(store, n: int, timeout: float = 15.0) -> None:
 def _submit_blocking(pipe, chunk, timeout=5.0):
     deadline = time.time() + timeout
     while time.time() < deadline:
-        st = pipe.submit(chunk)
+        st = pipe.submit(chunk, block=True)
         if st != "BACKPRESSURE":
             return st
         time.sleep(0.002)

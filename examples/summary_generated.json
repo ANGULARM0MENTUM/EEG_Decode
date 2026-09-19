@@ -1,0 +1,857 @@
+{
+  "session": {
+    "session_id": "6d1cbdd90366",
+    "created_ts": 1789821988.7271256,
+    "fs": 256.0,
+    "n_channels": 8,
+    "channel_names": [
+      "EEG1",
+      "EEG2",
+      "EEG3",
+      "EEG4",
+      "EEG5",
+      "EEG6",
+      "EEG7",
+      "EEG8"
+    ],
+    "window_sec": 2.0,
+    "hop_sec": 0.5,
+    "entropy_method": "spectral",
+    "source": "upload",
+    "status": "stopped",
+    "ended_ts": 1789821991.906637
+  },
+  "samples_seen": 460800,
+  "windows": 3597,
+  "dropped_chunks": 0,
+  "throughput_sps": 147337.3854910506,
+  "channel_entropy": {
+    "count": [
+      3597,
+      3597,
+      3597,
+      3597,
+      3597,
+      3597,
+      3597,
+      3597
+    ],
+    "mean": [
+      0.3037180923502548,
+      0.302349584944552,
+      0.3030806283005313,
+      0.30318278498436263,
+      0.30229306493893815,
+      0.3036547334871852,
+      0.3021217215376293,
+      0.3029600340414331
+    ],
+    "std": [
+      0.004655375387885074,
+      0.004610790798465548,
+      0.0046276988640098875,
+      0.004564738793451983,
+      0.004700617810748514,
+      0.004638186882132208,
+      0.00472157631288102,
+      0.004664808867619748
+    ],
+    "min": [
+      0.28698355543196813,
+      0.28320498677063505,
+      0.279690454053891,
+      0.2865128653854018,
+      0.2844841086514679,
+      0.288683586612207,
+      0.284581914103594,
+      0.28781484491729814
+    ],
+    "max": [
+      0.32007553644701936,
+      0.3182856076553122,
+      0.3193784656311002,
+      0.32318884084017885,
+      0.3204514763757185,
+      0.32143791283755396,
+      0.31862848096534924,
+      0.324540574518882
+    ],
+    "range": [
+      0.03309198101505123,
+      0.03508062088467717,
+      0.03968801157720919,
+      0.03667597545477702,
+      0.03596736772425063,
+      0.032754326225346964,
+      0.03404656686175522,
+      0.03672572960158388
+    ]
+  },
+  "global_entropy": {
+    "mean": 0.3029200805731111,
+    "min": 0.29724292667167557,
+    "max": 0.30901380134080825,
+    "range": 0.01177087466913268,
+    "std": 0.001618950174964105,
+    "count": 3597
+  },
+  "latency_ms": {
+    "mean": 219.0426907872111,
+    "max": 249.16720390319824,
+    "min": 0.9961128234863281
+  },
+  "trend": "stable",
+  "intervals": [
+    {
+      "label": "STABLE",
+      "t_start": 1.99609375,
+      "t_end": 4.99609375,
+      "windows": 7
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 5.49609375,
+      "t_end": 5.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 5.99609375,
+      "t_end": 13.99609375,
+      "windows": 17
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 14.49609375,
+      "t_end": 14.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 14.99609375,
+      "t_end": 30.49609375,
+      "windows": 32
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 30.99609375,
+      "t_end": 31.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 31.99609375,
+      "t_end": 66.99609375,
+      "windows": 71
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 67.49609375,
+      "t_end": 68.49609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 68.99609375,
+      "t_end": 75.49609375,
+      "windows": 14
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 75.99609375,
+      "t_end": 75.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 76.49609375,
+      "t_end": 123.49609375,
+      "windows": 95
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 123.99609375,
+      "t_end": 125.49609375,
+      "windows": 4
+    },
+    {
+      "label": "STABLE",
+      "t_start": 125.99609375,
+      "t_end": 171.99609375,
+      "windows": 93
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 172.49609375,
+      "t_end": 173.49609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 173.99609375,
+      "t_end": 194.99609375,
+      "windows": 43
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 195.49609375,
+      "t_end": 195.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 196.49609375,
+      "t_end": 207.49609375,
+      "windows": 23
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 207.99609375,
+      "t_end": 208.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 208.99609375,
+      "t_end": 212.49609375,
+      "windows": 8
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 212.99609375,
+      "t_end": 212.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 213.49609375,
+      "t_end": 262.49609375,
+      "windows": 99
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 262.99609375,
+      "t_end": 262.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 263.49609375,
+      "t_end": 285.49609375,
+      "windows": 45
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 285.99609375,
+      "t_end": 286.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 286.99609375,
+      "t_end": 425.99609375,
+      "windows": 279
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 426.49609375,
+      "t_end": 427.49609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 427.99609375,
+      "t_end": 445.49609375,
+      "windows": 36
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 445.99609375,
+      "t_end": 447.49609375,
+      "windows": 4
+    },
+    {
+      "label": "STABLE",
+      "t_start": 447.99609375,
+      "t_end": 457.99609375,
+      "windows": 21
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 458.49609375,
+      "t_end": 459.49609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 459.99609375,
+      "t_end": 493.99609375,
+      "windows": 69
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 494.49609375,
+      "t_end": 494.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 495.49609375,
+      "t_end": 518.49609375,
+      "windows": 47
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 518.99609375,
+      "t_end": 518.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 519.49609375,
+      "t_end": 579.49609375,
+      "windows": 121
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 579.99609375,
+      "t_end": 579.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 580.49609375,
+      "t_end": 606.49609375,
+      "windows": 53
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 606.99609375,
+      "t_end": 606.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 607.49609375,
+      "t_end": 611.99609375,
+      "windows": 10
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 612.49609375,
+      "t_end": 613.99609375,
+      "windows": 4
+    },
+    {
+      "label": "STABLE",
+      "t_start": 614.49609375,
+      "t_end": 658.99609375,
+      "windows": 90
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 659.49609375,
+      "t_end": 659.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 659.99609375,
+      "t_end": 735.49609375,
+      "windows": 152
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 735.99609375,
+      "t_end": 736.99609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 737.49609375,
+      "t_end": 857.99609375,
+      "windows": 242
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 858.49609375,
+      "t_end": 858.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 858.99609375,
+      "t_end": 886.49609375,
+      "windows": 56
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 886.99609375,
+      "t_end": 886.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 887.49609375,
+      "t_end": 918.49609375,
+      "windows": 63
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 918.99609375,
+      "t_end": 919.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 919.99609375,
+      "t_end": 922.49609375,
+      "windows": 6
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 922.99609375,
+      "t_end": 923.99609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 924.49609375,
+      "t_end": 938.49609375,
+      "windows": 29
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 938.99609375,
+      "t_end": 938.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 939.49609375,
+      "t_end": 985.49609375,
+      "windows": 93
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 985.99609375,
+      "t_end": 985.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 986.49609375,
+      "t_end": 1045.49609375,
+      "windows": 119
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1045.99609375,
+      "t_end": 1047.49609375,
+      "windows": 4
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1047.99609375,
+      "t_end": 1059.99609375,
+      "windows": 25
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1060.49609375,
+      "t_end": 1061.49609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1061.99609375,
+      "t_end": 1083.49609375,
+      "windows": 44
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1083.99609375,
+      "t_end": 1083.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1084.49609375,
+      "t_end": 1107.99609375,
+      "windows": 48
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1108.49609375,
+      "t_end": 1108.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1108.99609375,
+      "t_end": 1109.99609375,
+      "windows": 3
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1110.49609375,
+      "t_end": 1110.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1111.49609375,
+      "t_end": 1123.49609375,
+      "windows": 25
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1123.99609375,
+      "t_end": 1124.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1124.99609375,
+      "t_end": 1135.99609375,
+      "windows": 23
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1136.49609375,
+      "t_end": 1136.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1136.99609375,
+      "t_end": 1146.99609375,
+      "windows": 21
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1147.49609375,
+      "t_end": 1147.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1147.99609375,
+      "t_end": 1189.99609375,
+      "windows": 85
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1190.49609375,
+      "t_end": 1190.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1190.99609375,
+      "t_end": 1204.49609375,
+      "windows": 28
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1204.99609375,
+      "t_end": 1205.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1205.99609375,
+      "t_end": 1266.49609375,
+      "windows": 122
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1266.99609375,
+      "t_end": 1266.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1267.49609375,
+      "t_end": 1274.49609375,
+      "windows": 15
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1274.99609375,
+      "t_end": 1274.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1275.49609375,
+      "t_end": 1282.99609375,
+      "windows": 16
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1283.49609375,
+      "t_end": 1283.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1284.49609375,
+      "t_end": 1292.49609375,
+      "windows": 17
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1292.99609375,
+      "t_end": 1293.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1293.99609375,
+      "t_end": 1308.49609375,
+      "windows": 30
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1308.99609375,
+      "t_end": 1309.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1309.99609375,
+      "t_end": 1309.99609375,
+      "windows": 1
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1310.49609375,
+      "t_end": 1310.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1310.99609375,
+      "t_end": 1387.49609375,
+      "windows": 154
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1387.99609375,
+      "t_end": 1388.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1388.99609375,
+      "t_end": 1407.49609375,
+      "windows": 38
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1407.99609375,
+      "t_end": 1407.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1408.49609375,
+      "t_end": 1463.99609375,
+      "windows": 112
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1464.49609375,
+      "t_end": 1464.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1464.99609375,
+      "t_end": 1476.99609375,
+      "windows": 25
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1477.49609375,
+      "t_end": 1477.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1477.99609375,
+      "t_end": 1484.49609375,
+      "windows": 14
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1484.99609375,
+      "t_end": 1485.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1485.99609375,
+      "t_end": 1499.99609375,
+      "windows": 29
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1500.49609375,
+      "t_end": 1501.49609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1501.99609375,
+      "t_end": 1507.49609375,
+      "windows": 12
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1507.99609375,
+      "t_end": 1508.99609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1509.49609375,
+      "t_end": 1560.49609375,
+      "windows": 103
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1560.99609375,
+      "t_end": 1561.99609375,
+      "windows": 3
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1562.49609375,
+      "t_end": 1574.49609375,
+      "windows": 25
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1574.99609375,
+      "t_end": 1574.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1575.49609375,
+      "t_end": 1582.49609375,
+      "windows": 15
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1582.99609375,
+      "t_end": 1583.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1583.99609375,
+      "t_end": 1623.99609375,
+      "windows": 81
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1624.49609375,
+      "t_end": 1624.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1625.49609375,
+      "t_end": 1661.99609375,
+      "windows": 74
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1662.49609375,
+      "t_end": 1662.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1663.49609375,
+      "t_end": 1676.99609375,
+      "windows": 28
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1677.49609375,
+      "t_end": 1677.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1678.49609375,
+      "t_end": 1735.99609375,
+      "windows": 116
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1736.49609375,
+      "t_end": 1736.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1737.49609375,
+      "t_end": 1768.49609375,
+      "windows": 63
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1768.99609375,
+      "t_end": 1769.49609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1769.99609375,
+      "t_end": 1776.99609375,
+      "windows": 15
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1777.49609375,
+      "t_end": 1777.49609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1777.99609375,
+      "t_end": 1793.99609375,
+      "windows": 33
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1794.49609375,
+      "t_end": 1794.99609375,
+      "windows": 2
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1795.49609375,
+      "t_end": 1798.49609375,
+      "windows": 7
+    },
+    {
+      "label": "CHANGING",
+      "t_start": 1798.99609375,
+      "t_end": 1798.99609375,
+      "windows": 1
+    },
+    {
+      "label": "STABLE",
+      "t_start": 1799.49609375,
+      "t_end": 1799.99609375,
+      "windows": 2
+    }
+  ],
+  "last_state": "OK"
+}

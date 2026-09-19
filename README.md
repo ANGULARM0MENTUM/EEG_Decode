@@ -75,7 +75,7 @@ python -m venv .venv
 # Windows: .venv\Scripts\activate
 # Unix:    source .venv/bin/activate
 pip install -r requirements.txt
-python -m eeg_decode
+python run.py
 ```
 
 打开 http://127.0.0.1:8000 ，点「开始会话」。没有 BrainFlow 原生库时自动退回 numpy 正弦+噪声发生器（接口相同）。

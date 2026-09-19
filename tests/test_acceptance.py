@@ -16,7 +16,7 @@ from eeg_decode.store import new_session
 def _submit_blocking(pipe, chunk, timeout=8.0):
     deadline = time.time() + timeout
     while time.time() < deadline:
-        if pipe.submit(chunk) != "BACKPRESSURE":
+        if pipe.submit(chunk, block=True) != "BACKPRESSURE":
             return
         time.sleep(0.001)
     raise TimeoutError("queue did not drain")

@@ -6,7 +6,8 @@ COPY requirements.txt pyproject.toml README.md ./
 COPY eeg_decode ./eeg_decode
 COPY frontend ./frontend
 COPY examples ./examples
+COPY run.py ./
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 ENV EEG_HOST=0.0.0.0 EEG_PORT=8000
-CMD ["python", "-m", "eeg_decode"]
+CMD ["python", "run.py"]

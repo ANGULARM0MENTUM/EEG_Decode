@@ -66,10 +66,23 @@ class SessionPipeline:
         if self._worker:
             self._worker.join(timeout=2.0)
 
-    def submit(self, chunk: StreamChunk) -> str:
-        """Push a chunk. Returns OK, BACKPRESSURE, or STOPPED."""
+    def submit(self, chunk: StreamChunk, block: bool = False) -> str:
+        """Push a chunk. Returns OK, BACKPRESSURE, or STOPPED.
+
+        BACKPRESSURE means this chunk was accepted after dropping the oldest
+        queued chunk. Do not resubmit the same chunk.
+        """
         if self._stop.is_set():
             return "STOPPED"
+        if block:
+            try:
+                self.q.put(chunk, timeout=10.0)
+                return "OK"
+            except queue.Full:
+                with self.store.lock:
+                    self.store.dropped_chunks += 1
+                self.store.last_state = "BACKPRESSURE"
+                return "BACKPRESSURE"
         try:
             self.q.put_nowait(chunk)
             return "OK"

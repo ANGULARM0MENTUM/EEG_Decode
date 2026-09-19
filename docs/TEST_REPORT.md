@@ -2,6 +2,8 @@
 
 本地执行：`pip install -r requirements.txt && pytest -q`
 
+本次仓库实测：`12 passed`（含加速 30 分钟当量：256 Hz × 1800 s，`samples_seen=460800`，`windows=3597`，`dropped_chunks=0`）。生成文件：`examples/summary_generated.json`。
+
 | 用例 | 步骤 | 期望 | 实现 |
 | --- | --- | --- | --- |
 | 实时 EEG 数据流 | `tests/test_pipeline.py::test_stream_windows_status_and_alignment` 连续注入 20 块多通道数据 | 收到 waveform / entropy / status；窗时间戳单调且步长≈hop | pytest |
@@ -19,4 +21,4 @@
 python scripts/run_long_session.py --seconds 1800
 ```
 
-浏览器手工：启动 `python -m eeg_decode`，打开 `/`，开始会话，观察波形、熵曲线、KPI，中途点「拉取汇总」，再结束会话。
+浏览器手工：启动 `python run.py`，打开 `/`，开始会话，观察波形、熵曲线、KPI，中途点「拉取汇总」，再结束会话。
